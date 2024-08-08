@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "dev": "bun run --hot src/index.ts --host"
+    "dev": "bun run --hot src/app.ts --host"
   },
   "dependencies": {
-    "hono": "^4.2.9",
-    "stripe": "^15.4.0",
-    "zod": "^3.23.5"
+    "hono": "^4.5.3",
+    "sqlite3": "^5.1.7",
+    "stripe": "^16.5.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/bun": "latest"
