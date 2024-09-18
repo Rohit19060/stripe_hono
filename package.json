@@ -3,9 +3,9 @@
     "dev": "bun run --hot src/app.ts --host"
   },
   "dependencies": {
-    "hono": "^4.5.3",
+    "hono": "^4.5.8",
     "sqlite3": "^5.1.7",
-    "stripe": "^16.5.0",
+    "stripe": "^16.8.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {

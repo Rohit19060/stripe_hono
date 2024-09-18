@@ -16,4 +16,15 @@ stripeRoutes.get("/payment_intent/:paymentIntentId", async (c) => {
   }
 });
 
+stripeRoutes.get("/account", async (c) => {
+  try {
+    const account = await stripe.accounts.retrieve();
+    return c.json({ success: true, account });
+  } catch (error) {
+    console.error("Error retrieving account:", error);
+    return c.json({ success: false, error: error });
+  }
+});
+
 export { stripeRoutes };
+

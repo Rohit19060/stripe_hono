@@ -1,5 +1,3 @@
-// src/routes/connectedAccount.ts
-
 import { Context, Hono } from "hono";
 import Stripe from "stripe";
 import { z } from "zod";
